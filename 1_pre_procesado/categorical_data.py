@@ -34,6 +34,7 @@ ct = ColumnTransformer(
     [('encoder', OneHotEncoder(categories='auto'), [0])],   
     remainder='passthrough'                        
 )
+
 x = np.array(ct.fit_transform(x))
 
 
